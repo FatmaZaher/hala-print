@@ -38,7 +38,7 @@ export default {
             'CdJHZtimxELFk1aWLBNvfbAa0LOE3seORPoqbwo4pGb7BO18B3uhWhd9jjuPsEGn',
         })
         .then((response) => {
-          console.log(response.config)
+          console.log(response.data)
           const fileURL = window.URL.createObjectURL(new Blob([response.data]))
           const fileLink = document.createElement('a')
           fileLink.href = fileURL
